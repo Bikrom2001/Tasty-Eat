@@ -183,4 +183,16 @@
     window.addEventListener("load", toggleBacktotop);
     onscroll(document, toggleBacktotop);
   }
+
+  /**
+   * Initiate glightbox
+   */
+  const glightbox = GLightbox({
+    selector: ".glightbox",
+  });
+
+  /**
+   * Initiate Pure Counter
+   */
+  new PureCounter();
 })();
