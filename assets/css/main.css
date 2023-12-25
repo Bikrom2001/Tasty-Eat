@@ -1010,7 +1010,6 @@ section {
 # Stats CSS
 --------------------------------------------------------------*/
 .stats .stats-container {
-  
   position: relative;
   z-index: 2;
 }
@@ -1060,8 +1059,128 @@ section {
   font-size: 17px;
   font-weight: 500;
 }
+/*--------------------------------------------------------------
+# Food menu Secion
+--------------------------------------------------------------*/
+#foodMenu .FoodMenu-heading h4 {
+  background-color: rgba(var(--primary-color-rgb), 0.2);
+  display: inline-block;
+  color: var(--primary-color);
+  font-size: 17px;
+  font-weight: 700;
+  padding: 4px 25px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+#foodMenu .FoodMenu-heading h2 {
+  font-size: 33px;
+  font-weight: 700;
+  position: relative;
+  color: var(--text-primary-color);
+  line-height: 40px;
+  margin-bottom: 15px;
+}
+.foodMenu #portfolio-flters li {
+  cursor: pointer;
+  display: inline-block;
+  margin: 10px 5px;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1;
+  color: var(--text-primary-color);
+  transition: all 0.3s;
+  padding: 8px 20px;
+  border-radius: 50px;
+}
+.foodMenu #portfolio-flters li:hover,
+.foodMenu #portfolio-flters li.filter-active {
+  background: var(--primary-color);
+  color: var(--contrast-color);
+}
 
-
+#foodMenu .menu-item {
+  border: 1px solid rgb(146 48 48 / 20%);
+  border-radius: 6px;
+  transition: all 0.3s ease-out 0s;
+  padding: 20px 15px;
+  background: var(--contrast-color);
+  position: relative;
+}
+#foodMenu .menu-item .details h5 {
+  background: var(--text-primary-color);
+  color: var(--contrast-color);
+  display: inline-block;
+  padding: 3px 10px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 3px;
+  position: absolute;
+  top: 10px;
+}
+#foodMenu .menu-item .details .rating {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+#foodMenu .menu-item .details .rating-star {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background: #f6fbf7;
+  padding-right: 8px;
+  padding-left: 8px;
+  padding-bottom: 5px;
+  border-radius: 6px;
+}
+#foodMenu .menu-item .details .rating .rating-star i {
+  color: #fba723;
+  font-weight: normal;
+}
+#foodMenu .menu-item .details .rating h6 {
+  color: var(--text-primary-color);
+  font-weight: 800;
+  font-size: 15px;
+  margin-bottom: 0px;
+}
+#foodMenu .menu-item .menu-img {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+#foodMenu .menu-item .menu-img img {
+  width: 190px;
+  height: 190px;
+  margin: 0 auto;
+}
+#foodMenu .menu-item .menu-info {
+  text-align: center;
+  padding-bottom: 15px;
+}
+#foodMenu .menu-item .menu-info h4 {
+  color: var(--text-primary-color);
+  font-size: 20px;
+  font-weight: 700;
+}
+#foodMenu .menu-item .menu-info .price {
+  color: var(--text-primary-color);
+  font-weight: 700;
+}
+#foodMenu .menu-item .menu-info .price span {
+  color: var(--primary-color);
+}
+#foodMenu .menu-item .menu-info .shop-btn a {
+  background: #ffe3e5;
+  color: var(--primary-color);
+  padding: 6px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 6px;
+}
+#foodMenu .menu-item .menu-info .shop-btn a:hover {
+  background: var(--primary-color);
+  color: var(--contrast-color);
+}
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
